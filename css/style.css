@@ -1,0 +1,253 @@
+/*Bhavesh Gupta PG10. Battleships game. */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  margin: auto;
+  color: #555;
+  font-family: 'Hurry Up', arial;
+  font-size: 16px;
+  position: relative;
+  height: 100vh;
+  font-weight: 400;
+  background-image: url("../images/BattleshipPirate.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.game{
+  display: flex;
+}
+.title{
+  width: 2000px;
+  height: 460px;
+  /*border: 1px solid black;*/
+  background-image: url("../images/title2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#board{
+    width: 570px;
+    height: 550px;
+    top: 18px;
+    left: 28px;
+    position: relative;
+  }
+.cell {
+      border: 1px dashed black;
+      cursor: crosshair;
+}
+
+.newCellMiss{
+  border: 1px dashed black;
+  background-image: url("../images/cross.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newCellHit{
+  border: 1px dashed black;
+  background-image: url("../images/explosion.gif");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: center;
+  background-size:cover;
+}
+
+#score{
+  margin-top: 10px;
+  margin-right: 50px;
+  color: red;
+  font-size: 30px;
+}
+
+.flexitems{
+  height: 600px;
+  width:550px;
+  color: red;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  /*border: 1px solid green;*/
+  flex-direction: column;
+}
+
+.gridgame{
+  height:600px;
+  width:630px;
+  background-image: url("../images/Drawing1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 480px;
+  height: 90px;
+  /*border: 1px solid red;*/
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+
+
+.options1{
+  font-size: 50px;
+  color:Gainsboro;
+}
+.options1:hover{
+  font-size: 50px;
+  color:red;
+}
+.options2{
+  font-size: 50px;
+  color:White;
+}
+.options2:hover{
+  font-size: 50px;
+  color:red;
+}
+
+.win{
+  font-size: 80px;
+  color:Gold;
+}
+
+.lose{
+  font-size: 80px;
+  color:red;
+}
+.InstructionHeading{
+  font-size:80px;
+  color:White;
+  text-align: center;
+}
+.InstructionBody{
+  font-size:30px;
+  color:White;
+  text-align: center;
+  padding: 40px;
+}
+.goback{
+  font-size:30px;
+  color:White;
+  text-align: center;
+  padding: 40px;
+}
+.goback:hover{
+  color:red;
+}
+.skullflex0{
+ background-image: url("../images/skull.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.skullflex1{
+ background-image: url("../images/skull.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+
+.skullflex2{
+ background-image: url("../images/skull.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+
+.skullflex3{
+ background-image: url("../images/skull.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+
+.skullflex4{
+ background-image: url("../images/skull.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+
+.skullflexSink0{
+ background-image: url("../images/skulldestroyed.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.skullflexSink1{
+ background-image: url("../images/skulldestroyed.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.skullflexSink2{
+ background-image: url("../images/skulldestroyed.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.skullflexSink3{
+ background-image: url("../images/skulldestroyed.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.skullflexSink4{
+ background-image: url("../images/skulldestroyed.png");
+ background-repeat: no-repeat;
+ height: 90px;
+ width: 90px;
+ background-size: contain;
+}
+.footer{
+  font-size: 10px;
+  color: #000;
+  float:right;
+}
+.Victory{
+  position: absolute;
+  top: 250px;
+  z-index: 99;
+  height: 750px;
+  width : 1000px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.Defeat{
+  position: absolute;
+  top: 250px;
+  z-index: 99;
+  height: 750px;
+  width : 1000px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.Instruction{
+  position: absolute;
+  top: 250px;
+  z-index: 99;
+  height: 750px;
+  width : 1200px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hide{
+  display: none !important;
+}

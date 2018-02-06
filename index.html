@@ -1,0 +1,109 @@
+<!-- Bhavesh Gupta PG10. Battleships game. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- scaling down tde entire web page by using meta viewport to fit tde screen in an attempt to make tde webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://allfont.net/allfont.css?fonts=hurry-up" rel="stylesheet" type="text/css" />
+    <link rel = "stylesheet" type="text/css" href = "css/style.css" />
+    <title>Battleship Game</title>
+  </head>
+
+  <body>
+    <!-- main container that covers the entire screen -->
+    <div class="container">
+      <!-- title div is going to be on all the pages. -->
+      <div class = "title"></div>
+      <!-- start page div for the start page will be below the title in the container. -->
+      <div class  = "startPage">
+          <div class = "options1 clickable" id = "single" align = "center"><h1> Single Player</h1>
+          </div>
+          <div class = "options1 clickable" id = "instructions" align = "center"><h1>Instructions</h1>
+          </div>
+      </div>
+      <div class = "Instruction hide">
+        <div class = "InstructionHeading"><h1>Instructions</h1></div>
+        <div class = "InstructionBody">You are the Captain of your fleet and your mission is to destroy the enemy fleet by hitting their ships at the right spots on the grid.
+        Destroy all ships in the given number of shots to win the game.
+        the number of skulls on the left side in each row represent the length of the ship.</div>
+        <div class = "goback clickable"> Go Back </div>
+      </div>
+      <!-- </div> -->
+      <div class = "game hide">
+        <div class="ships flexitems" align = "center">
+          <div>
+            <h1 > ships </h1>
+          </div>
+          <div class="flexcontainer1 flexcontainer">
+            <div class="skullflex0"></div>
+            <div class="skullflex0"></div>
+            <div class="skullflex0"></div>
+            <div class="skullflex0"></div>
+            <div class="skullflex0"></div>
+          </div>
+
+          <div class="flexcontainer2 flexcontainer">
+            <div class="skullflex1"></div>
+            <div class="skullflex1"></div>
+            <div class="skullflex1"></div>
+            <div class="skullflex1"></div>
+          </div>
+
+          <div class="flexcontainer3 flexcontainer">
+            <div class="skullflex2"></div>
+            <div class="skullflex2"></div>
+            <div class="skullflex2"></div>
+            <div class="skullflex2"></div>
+          </div>
+
+          <div class="flexcontainer4 flexcontainer">
+            <div class="skullflex3"></div>
+            <div class="skullflex3"></div>
+            <div class="skullflex3"></div>
+          </div>
+
+          <div class="flexcontainer5 flexcontainer">
+            <div class="skullflex4"></div>
+            <div class="skullflex4"></div>
+          </div>
+        </div>
+
+        <div class="gridgame flexitems" id = "champ">
+          </div>
+          <div class="score flexitems" align = "center">
+              <div id="score">
+                <div>
+                  <h1> SCORE </h1>
+                  <h1 id ="scoreCount"> 0</h1>
+                </div>
+                <div>
+                  <h1> Shots </h1>
+                    <h1 id = "shotsLeft">40</h1>
+                </div>
+              </div>
+        </div>
+      </div>
+        <div class = "Victory hide">
+          <div class = "win" align = "center"><h1>VICTORY!</h1></div>
+          <div class = "options2 clickable" id = "playagain" align = "center"><h1>Play Again</h1>
+          </div>
+          <div class = "options2 clickable" id = "cancel" align = "center"><h1>Cancel</h1>
+          </div>
+        </div>
+        <div class = "Defeat hide">
+          <div class = "lose" align = "center"><h1>DEFEAT!!</h1></div>
+          <div class = "options2 clickable" id = "tryagain" align = "center"><h1>Try Again</h1>
+          </div>
+          <div class = "options2 clickable" id = "cancel2" align = "center"><h1>Cancel</h1>
+          </div>
+        </div>
+    </div>
+    <div class = "footer">
+    © 2017 Bhavesh Gupta
+    </div>
+    <!-- including CDN link to buzz.js -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.js"></script>
+    <!-- including the App.js file to html -->
+    <script src ="js/App.js"></script>
+  </body>
+</html>
